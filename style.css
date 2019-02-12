@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+:root {
+    --light_pink: #ED7B7B;
+    --light_gray: #91979e;
+    --light_gray_alpha: rgb(200, 203, 207);
+    --box_shadow: 0 10px 20px rgba(8, 8, 8, 0.3), 0 6px 20px 0 rgba(8, 8, 8, 0.19);
+    --box_shadow_pink: 0 10px 20px rgba(237, 123, 123, 0.3), 0 6px 20px 0 rgba(237, 123, 123, 0.19);
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#momoBanner {
+    height: 256px;
+    background: url('https://cdn.vox-cdn.com/thumbor/louSGddYLagJB7ByLuU4jvJSAlw=/345x0:5678x4000/1200x675/filters:focal(345x0:5678x4000)/cdn.vox-cdn.com/uploads/chorus_image/image/48504367/MomosLead.0.0.jpg') center center;
+    opacity: 0.75;
+    background-size: cover;
+}
+
+#container {
+    font-family: 'Indie Flower', cursive;
+    height: 250vh;
+    padding-top: 72px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 50vw;
+    width: 100vw;
+    max-width: 1200px;
+    transform: translateX(-50%);
+    height: 72px;
+    background-color: #fff;
+    padding: 0 30px;
+    padding-left: 5px;
+    border-radius: 0 0 5px 5px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ #header-img {
+     max-width: 100%;
+     height: 70px;
+ }
+
+ .nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    transition: color -2s ease-out;
+    padding-left: 30px;
+ }
+ .nav-link:hover {
+     color: var(--light_pink);
+ }
+
+h2, h3, h4, footer {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light_pink);
+}
+
+#features {
+    background: #fff;
+    color: var(--light_gray);
+    box-shadow: var(--box_shadow);
+    margin: 5px;
+}
+
+#feature_h2_type,
+#feature_h4_sub_title {
+    text-align: center;
+}
+
+.momoImg {
+    max-width: 600px;
+    max-height: 340px;
+}
+
+#momo-types {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 10px 5px 10px;
+    padding: 10px;
+}
+
+#momo-types p {
+    font-size: 1.2rem;
+}
+.momo {
+    margin: 5px;
+    flex-grow: 1;
+    width: 60%;
+    box-shadow: var(--box_shadow);
+}
+
+#how-to-make {
+    text-align: center;
+    box-shadow: var(--box_shadow);
+    padding-bottom: 20px;
+    margin: 5px;
+}
+
+#how-to-make h2 {
+    padding: 10px;
+}
+
+#video {
+    margin-top: 10px;
+    box-shadow: var(--box_shadow);
+}
+
+#pricings {
+    margin-bottom: 20px;
+    box-shadow: var(--box_shadow);
+    padding: 20px;
+    margin: 5px;
+}
+
+#pricings h2 {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: var(--box_shadow); /* this adds the "card" effect */
+    margin: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    height: 150px;
+}
+
+.card h3 {
+    background: var(--light_gray);
+    padding: 10px;
+}
+
+#more-info {
+    background: linear-gradient(to right, var(--light_gray), var(--light_pink));
+    padding: 40px;
+    text-align: center;
+}
+
+input {
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    box-shadow: 0 1px 2px rgba(0,0,0, .2);
+}
+
+#email {
+    width: 400px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#submit {
+    text-transform: uppercase;
+    background-color: var(--light_gray);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .2s ease-out;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: var(--light_pink);
+}
+
+footer {
+    text-align: right;
+    margin: 10px;
+}
