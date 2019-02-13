@@ -72,12 +72,14 @@ h2, h3, h4, footer {
     background: #fff;
     color: var(--light_gray);
     box-shadow: var(--box_shadow);
-    margin: 5px;
+    margin: 5px 5px 20px;
 }
 
 #feature_h2_type,
 #feature_h4_sub_title {
     text-align: center;
+    margin-top: 5px;
+    padding-top: 5px;
 }
 
 .momoImg {
@@ -92,7 +94,6 @@ h2, h3, h4, footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10px 10px 5px 10px;
     padding: 10px;
 }
 
@@ -100,17 +101,21 @@ h2, h3, h4, footer {
     font-size: 1.2rem;
 }
 .momo {
-    margin: 5px;
+    margin: 10px;
     flex-grow: 1;
     width: 60%;
     box-shadow: var(--box_shadow);
+}
+
+.momo:last-child {
+    box-shadow:   0 0 20px rgba(8, 8, 8, 0.3), 0 0 20px 0 rgba(8, 8, 8, 0.19);
 }
 
 #how-to-make {
     text-align: center;
     box-shadow: var(--box_shadow);
     padding-bottom: 20px;
-    margin: 5px;
+    margin: 5px 5px 20px;
 }
 
 #how-to-make h2 {
@@ -126,7 +131,7 @@ h2, h3, h4, footer {
     margin-bottom: 20px;
     box-shadow: var(--box_shadow);
     padding: 20px;
-    margin: 5px;
+    margin: 5px 5px 20px;
 }
 
 #pricings h2 {
